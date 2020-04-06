@@ -12,11 +12,13 @@ const Status = (props) => {
 
   if (winner) {
     status = "Winner: " + winner;
+  } else if (stepNumber === 9) {
+    status = "It's A Tie";
   } else {
     status = "Next player: " + (next ? "X" : "O");
   }
 
-  return <div>{status}</div>;
+  return <div className="game-status">{status}</div>;
 };
 
 const mapStateToProps = (state) => ({

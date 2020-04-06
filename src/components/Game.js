@@ -6,8 +6,11 @@ import Reset from "./Reset";
 const Game = () => (
   <div className="game">
     <Board />
-    <Status />
-    <Reset />
+
+    <div className="status-info">
+      <Status />
+      <Reset />
+    </div>
   </div>
 );
 
