@@ -14,7 +14,7 @@ const reducer = combineReducers({
 const persistConfig = {
   key: "root",
   storage,
-  blacklist: ["tictac"],
+  blacklist: [],
 };
 
 const persistedReducer = persistReducer(persistConfig, reducer);
